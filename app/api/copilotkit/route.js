@@ -7,7 +7,7 @@ import {
 import Groq from "groq-sdk";
 
 const groq = new Groq({ apiKey: process.env.NEXT_PUBLIC_GROQ_CLOUD_API_KEY });
-console.log(process.env.NEXT_PUBLIC_GROQ_CLOUD_API_KEY);
+
 const copilotKit = new CopilotRuntime();
 
 const serviceAdapter = new GroqAdapter({
